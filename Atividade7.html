@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title> Atividade 6 </title>
+    </head>
+    <body>
+
+        <script>
+                function calculaArea(a, b){
+                    this.area = a * b;
+                    return (area);
+                }
+            
+                var Retangulo = {
+                    base : 6,
+                    altura : 7,
+                    area: calculaArea(base, altura)
+                };
+
+
+                function Conta (nomeCorrentista, Banco, numeroConta, saldo) {
+                    this.setnomeCorrentista = function (nome){
+                        this.nomeCorrentista = nome;
+                    };
+
+                    this.setBanco = function (b){
+                        this.Banco = b;
+                    };
+                    
+                    this.setnumeroConta = function (nC){
+                        this.numeroConta = nC;
+                    };
+
+                    this.setsaldo = function (s){
+                        this.saldo = s;
+                    };
+
+                    this.getnomeCorrentista = function (){
+                        return this.nomeCorrentista;
+                    };
+
+                    this.getBanco = function (){
+                        return this.Banco;
+                    };
+                    
+                    this.getnumeroConta = function (){
+                        return this.numeroConta;
+                    };
+
+                    this.getsaldo = function (){
+                        return this.saldo;
+                    };
+                };
+
+                function Corrente (saldoEspecial){
+                    Conta.call(this);
+                this.setsaldoEspecial = function (se){
+                    this.saldoEspecial = se;
+
+                    this.getsaldoEspecial = function (){
+                    return this.saldoEspecial;
+                };
+                };
+
+                function Poupanca (juros){
+                    Conta.call(this);
+                this.setjuros = function (j){
+                    this.juros = j;
+
+                this.getjuros = function (){
+                    return this.juros;
+                };
+                    
+                };
+                };
+            };
+
+        </script>
+
+    </body>
+</html>
