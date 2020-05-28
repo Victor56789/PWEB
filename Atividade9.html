@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 9</title>
+    <script>
+
+        function validarDados() {
+            
+            if (document.forms.formulario1.elements["chkMa"].checked){
+            var texto = document.getElementById(idAlgo);
+                document.write(texto.toUpperCase());
+
+                return true;
+            }
+
+            if (document.forms.formulario1.elements["chkMi"].checked){
+                var texto = document.getElementById(idAlgo);
+                document.write(texto.toLowerCase());
+
+                return true
+            }
+
+            return true;
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <form action="teste" method="POST" name="formulario1" id="formulario1" onsubmit="return validarDados();">
+
+        <div id="principal" width=200 heigth=200 align=center>
+            Digite algo:
+            <input name="Algo" type="text" id="idAlgo" size="52" maxlength="150">     
+            
+            <input type="checkbox" name="cBox" id="chkMa" value="on">Maiúscula
+            <input type="checkbox" name="cBox" id="chkMi" value="on">Minuscula
+            <br>
+            <br>
+            <input name="Submit" type="submit" form="formulario1" value="Submit">
+            <input name="Reset" type="reset" form="formulario1" value="Redefinir">
+        </div>
+    </form>
+</body>
+
+</html>
