@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Atividade 8</title>
+        <script>
+            function abrejanela(){
+                document.getElementById("janela").src = "JanAberta.jpg";
+            }
+            function fechajanela(){
+                document.getElementById("janela").src = "JanFechada.jpg";
+            }
+            function quebrajanela(){
+                document.getElementById("janela").src = "JanQuebrada.jpg";
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <img src = "JanFechada.jpg" id = "janela" onmousemove="abrejanela()" onmouseout="fechajanela()" onclick="quebrajanela()">
+    </body>
+</html>
