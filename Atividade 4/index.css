@@ -1,0 +1,27 @@
+
+
+body{
+    margin:0px;
+    font-family: Arial, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+}
+
+section.h1{
+    text-align: center;
+
+}
+
+p{
+    text-align: justify;
+    text-indent: 50px
+}
+
+section{
+    width: 900px;
+}
+article{
+    width: 900px;
+    text-align: center;
+    margin: 2px 5px 4px 5px;
+}
