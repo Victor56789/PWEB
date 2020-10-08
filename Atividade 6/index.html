@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var escolhaJogador = 'pedra';
+
+        function compara(ec, ej){
+            if(ec == 'papel' && ej == 'papel'){
+                alert('Empate');
+            }else if(ec == 'tesoura' && ej == 'tesoura'){
+                alert('Empate')
+            }else if(ec == 'pedra' && ej == 'pedra'){
+                alert('Empate')
+            }else if(ec == 'papel' && ej == 'pedra'){
+                alert('Computador Venceu!')
+            }else if(ej == 'papel' && ec == 'pedra'){
+                alert('Jogador Venceu!')
+            }else if(ej == 'papel' && ec == 'tesoura'){
+                alert('Computador Venceu!')
+            }else if(ec == 'papel' && ej == 'tesoura'){
+                alert('Jogador Venceu!')
+            }else if(ec == 'pedra' && ej == 'tesoura'){
+                alert('Computador Venceu!')
+            }else if(ej == 'pedra' && ec == 'tesoura'){
+                alert('Jogador Venceu!')
+            }
+
+        }
+
+        function sortear(){
+            var pc = Math.random() 
+            if(pc <= 0.33){
+                document.getElementById("computador").src="./pedra.png"
+                escolha = 'pedra'
+            }else if(pc <= 0.66){
+                document.getElementById("computador").src="./tesoura.png"
+                escolha = 'tesoura'
+            }else if(pc <= 1){
+                document.getElementById("computador").src="./papel.png"
+                escolha = 'papel'
+            }
+
+            compara(escolha, escolhaJogador);
+            
+        }
+        function papel(){
+            document.getElementById("jogador").src="./papel.png"
+            escolhaJogador = "papel";
+        }
+        function tesoura(){
+            document.getElementById("jogador").src="./tesoura.png"
+            escolhaJogador = "tesoura";
+        }
+        function pedra(){
+            document.getElementById("jogador").src="./pedra.png"
+            escolhaJogador = "pedra";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img id="jogador" class="esquerda" src="./pedra.png" alt="Jogador">
+        <img id="computador" class="direita" src="./pedra.png" alt="Computador">
+    </div>
+    <section class="flex">
+        <p>Você escolhe:</p>
+        <div>
+            <button id="btnPapel" onclick="papel()">Papel</button>
+        </div>
+        <div>
+            <button id="btnTesoura" onclick="tesoura()">Tesoura</button>
+        </div>
+        <div>
+            <button id="btnPedra" onclick="pedra()">Pedra</button>
+        </div>
+        <div class="jogar">
+            <button id="btnJogar" onclick="sortear()" type="submit" id ="jogar">Jogar</button>
+    </section>
+    
+</body>
+    <script> src="index.js" </script>
+</html>

@@ -1,0 +1,46 @@
+.container{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#btnPapel{
+    width: 70px;
+    height: 70px;
+}
+#btnTesoura{
+    width: 70px;
+    height: 70px;
+}
+#btnPedra{
+    width: 70px;
+    height: 70px;
+}
+#btnJogar{
+    width: 70px;
+    height: 70px;
+}
+
+.jogar{
+    padding-left: 650px;
+}
+
+div{
+    padding: 20px;
+}
+
+.esquerda{
+    width: 200px;
+    margin: 10px;
+}
+
+.direita{
+    width: 200px;
+    margin: 10px;
+}
