@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(17, 17, 17);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cursos{
+    margin-top: 80px;
+    
+    height: 40px;
+    border-radius: 15px;
+}
