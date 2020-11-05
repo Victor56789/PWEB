@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" ></script>
+</head>
+
+<body>
+    <form action="page2.html" method="post" name="dados" onSubmit="return submitForms();" class="form" id="formulario">
+        <div class="inputs">
+            <h3>Nome</h3>
+            <input type="text" class="nome" id="nome" name="nome">
+            <h3>Email</h3>
+            <input type="text" class="email" id="email" name="email">
+            <h3>Comentários</h3>
+            <textarea name="comentario" id="comentario" class="comentario" cols="50" rows="10"></textarea>
+        </div>
+        <p>
+        <h2>Pesquisa</h2>
+        <br>
+        Primeira vez nessa página ?
+        </p>
+        <div class="radios">
+            <input type="radio" name="pesquisa" id="positivo" value="sim">
+            <label for="sim">Sim</label><br>
+            <input type="radio" name="pesquisa" id="negativo" value="nao">
+            <label for="nao">Não</label><br>
+        </div>
+        <div class="buttons">
+            <button type="submit">Enviar</button>
+            <button type="reset" onclick="limpar()">Limpar</button>
+        </div>
+    </form>
+</body>
+
+</html>

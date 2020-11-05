@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(17, 17, 17);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.radios{
+    margin: 30px 0px 30px 0px;
+    display: flex;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
